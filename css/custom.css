@@ -1,0 +1,27 @@
+.custom-social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding-top: 20px;
+}
+.custom-social-icons li {
+  color: #777;
+  display: inline-block;
+  padding: 20px;
+}
+i.fa.fa-github,
+i.fa.fa-linkedin {
+  font-size: 40px;
+}
+section.small-section.bg-dark {
+  margin-top: 80px;
+}
+.page-section {
+  padding: 70px 0;
+}
+a.btn.btn-mod.btn-w.btn-medium.btn-round.btn-external {
+  background-color: rgba(34,34,34, .9);
+  color: #fff;
+}
+
