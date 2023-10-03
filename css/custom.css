@@ -24,4 +24,7 @@ a.btn.btn-mod.btn-w.btn-medium.btn-round.btn-external {
   background-color: rgba(34,34,34, .9);
   color: #fff;
 }
-
+.skills-icon {
+  width: 48px;
+  height: 48px;
+}

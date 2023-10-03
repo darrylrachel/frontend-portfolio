@@ -7,6 +7,9 @@
         <meta name="author" content="https://themeforest.net/user/bestlooker/portfolio">
         <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Iconify -->
+        <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
         
         <!-- Favicons -->
         <!-- <link rel="shortcut icon" href="images/favicon.png"> -->
@@ -49,9 +52,8 @@
                         <ul class="clearlist scroll-nav local-scroll">
                             <li class="active"><a href="#home">Home</a></li>
                             <li><a href="#about">About</a></li>
-                            <!-- <li><a href="#skills">Skills</a></li> -->
+                            <li><a href="#skills">Skills</a></li>
                             <li><a href="#portfolio">Portfolio</a></li>
-                            <!-- <li><a href="#news">Blog</a></li> -->
                             <li><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
@@ -62,7 +64,7 @@
             <main id="main">    
             
                 <!-- Home Section -->
-                <section class="home-section bg-dark-alfa-30 parallax-2" data-background="images/hero-bg-2.png" id="home">
+                <section class="home-section bg-dark-alfa-30 parallax-2" data-background="images/hero.png" id="home">
                     <div class="js-height-full container">
                         
                         <!-- Hero Content -->
@@ -137,51 +139,56 @@
                     <div class="container relative">
                         
                         <h2 class="section-title font-alt mb-70 mb-sm-40">
-                            Work Process
+                            Skills
                         </h2>
                         
                         <!-- Nav tabs -->
                         <ul role="tablist" class="nav nav-tabs tpl-alt-tabs font-alt pt-30 pt-sm-0 pb-30 pb-sm-0">
-                            <li role="presentation">
-                                    
+                            <li role="presentation">        
                                     <div class="alt-tabs-icon">
-                                        <span class="icon-chat"></span>
+                                        <!-- <span class="icon-chat"></span> -->
+                                        <img src="/images/html.png" alt="" class="skills-icon">
                                     </div>
-                                    
-                                    Discuss
-                                </a>
+                                    HTML
                             </li>
                            
                             <li role="presentation">
-                                
-                                    
                                     <div class="alt-tabs-icon">
-                                        <span class="icon-toolbox"></span>
+                                        <img src="/images/css-3.png" alt="" class="skills-icon">
                                     </div>
-                                    
-                                    Develop
-                                </a>
+                                    css
                             </li>
                             <li role="presentation">
-                                
-                                    
                                     <div class="alt-tabs-icon">
-                                        <span class="icon-beaker"></span>
+                                        <iconify-icon icon="file-icons:mjml"></iconify-icon>
+                                        <!-- <span class="icon-beaker"></span> -->
                                     </div>
-                                    
-                                    Test
-                                </a>
+                                    mjml
+                            </li>
+                            <li role="presentation">      
+                                    <div class="alt-tabs-icon">
+                                        <img src="/images/bootstrap.png" alt="" class="skills-icon">
+                                    </div>
+                                    Bootstrap
                             </li>
                             <li role="presentation">
-                                
-                                    
-                                    <div class="alt-tabs-icon">
-                                        <span class="icon-genius"></span>
-                                    </div>
-                                    
-                                    Launch
-                                </a>
-                            </li>
+                                <div class="alt-tabs-icon">
+                                    <img src="/images/figma.png" alt="" class="skills-icon">
+                                </div>
+                                Figma
+                        </li>
+                        <li role="presentation" style="margin-top:40px;">
+                            <div class="alt-tabs-icon">
+                                <img src="/images/google-analytics.png" alt="" class="skills-icon">
+                            </div>
+                            Google Analytics
+                        </li>
+                        <li role="presentation" style="margin-top:40px;">
+                            <div class="alt-tabs-icon">
+                                <img src="/images/mailchimp.png" alt="" class="skills-icon">
+                            </div>
+                            Mailchimp
+                    </li>
                         </ul>
                         <!-- End Nav tabs -->
                         
@@ -300,13 +307,27 @@
                             </li>
                             <!-- End Work Item -->
 
+                            <li class="work-item mix emails">
+                                <div class="work-img">
+                                    <img class="work-img" src="images/portfolio/shopify-dark.png" alt="Shopify Newsletter Email" />
+                                </div>
+                                <div class="work-intro">
+                                    <h3 class="work-title">Shopify Transactional</h3>
+                                    <div class="work-btns">
+                                        <a href="https://honey-transaction-receipt.netlify.app/" class="btn btn-mod btn-w btn-medium btn-round btn-external" target="_blank">Project</a>
+                                        <a href="https://github.com/darrylrachel/shopify-email" class="btn btn-mod btn-w btn-medium btn-round btn-external" target="_blank">Code</a>
+                                    </div>
+                                </div>
+                        </li>
+                        <!-- End Work Item -->
+
                             <!-- <li class="work-item mix landing-pages">
                                 <a href="portfolio-single-1.html" class="work-ext-link">
                                     <div class="work-img">
                                         <img class="work-img" src="images/portfolio/petsmart-dark.png" alt="Petsmart Promo Email" />
                                     </div>
                                     <div class="work-intro">
-                                        <h3 class="work-title">Landing Page</h3>
+                                        <h3 class="work-title">Shopify Newsletter</h3>
                                         <div class="work-descr">
                                             Landing Page
                                         </div>
