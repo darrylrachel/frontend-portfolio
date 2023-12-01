@@ -1,3 +1,39 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+.main-nav.dark {
+	background-color: #fff;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+.main-nav.dark .inner-nav ul>li>a:hover,
+.main-nav.dark .inner-nav ul>li>a.active {
+	color: #FFC92C;
+	font-weight: 500;
+}
+.active {
+	/* color: #FFC92C; */
+}
+.greeting {
+	font-weight: 900;
+}
+.intro {
+	font-weight: 500;
+}
+a:hover {
+	text-decoration: none;
+}
+.cta-btn-group {
+	margin-top: 40px;
+}
+.btn-warning {
+	color: #fff;
+}
+.btn-warning:hover,
+.btn-outline-warning:hover {
+	color: #fff;
+}
 .custom-social-icons {
   display: flex;
   align-items: center;
@@ -27,4 +63,14 @@ a.btn.btn-mod.btn-w.btn-medium.btn-round.btn-external {
 .skills-icon {
   width: 48px;
   height: 48px;
+}
+.scroll-down-icon {
+	font-size: 30px;
+	color: #FFC92C;
+}
+.jumbotron {
+	padding-top: 250px;
+}
+h1.display-1 {
+	margin-bottom: 10px;
 }
