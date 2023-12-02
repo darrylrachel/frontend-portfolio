@@ -1,7 +1,7 @@
 body {
 	font-family: 'Roboto', sans-serif;
 }
-.main-nav.dark {
+.main-nav.dark, .main-nav {
 	background-color: #fff;
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
@@ -13,7 +13,12 @@ body {
 	font-weight: 500;
 }
 .active {
-	/* color: #FFC92C; */
+	color: #FFC92C;
+}
+.inner-nav ul li a:hover,
+.inner-nav ul li a.active {
+	color: #FFC92C;
+	text-decoration: none;
 }
 .greeting {
 	font-weight: 900;
@@ -73,4 +78,97 @@ a.btn.btn-mod.btn-w.btn-medium.btn-round.btn-external {
 }
 h1.display-1 {
 	margin-bottom: 10px;
+}
+
+/* PORTFOLIO SECTION */
+
+.works-grid.work-grid-gut {
+	/* margin: 0 0 0 116px; */
+}
+
+.works-filter a.active {
+	color: #FFC92C;
+	font-weight: 500;
+	cursor: default;
+}
+.works-filter a.active:hover {
+	color: #FFC92C;
+}
+.portfolio-section {
+	padding: 0;
+}
+.portfolio-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0;
+	margin: 0 0 20px 0;
+}
+.portfolio-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	/* border: 1px solid #FFC92C; */
+	/* filter: drop-shadow(0px 0px 8px #000000); */
+	box-shadow: 0px 6px 13px 0px rgba(0, 0, 0, 0.13);
+	-webkit-box-shadow: 0px 6px 13px 0px rgba(0, 0, 0, 0.13);
+
+	height: 450px;
+	width: 375px;
+	margin: 0;
+	background: #fff;
+}
+.portfolio-card-img {
+	width: 100%;
+	height: 80%;
+	background: #292929;
+}
+.portfolio-btn-group {
+	margin: auto auto;
+
+}
+.home-section {
+	width: 100%;
+	display: block;
+	position: relative;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: contain;
+}
+.main-nav.dark .mobile-nav {
+	background-color: transparent;
+	border-color: transparent;
+	color: #FFC92C;
+}
+.main-nav.dark .mobile-nav:hover,
+.main-nav.dark .mobile-nav.active {
+	color: #FFC92C;
+}
+.main-nav.dark .inner-nav ul>li>a {
+	/* color: rgba(255,255,255, .7); */
+	color: #fff;
+}
+.mobile-nav {
+	border: none;
+}
+.mobile-on .desktop-nav ul {
+	width: 100%;
+	float: none;
+	background: #fff;
+	position: relative;
+	overflow-x: hidden;
+}
+.mobile-nav .fa {
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 21px;
+	color: #FFC92C;
 }

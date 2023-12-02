@@ -1494,19 +1494,19 @@ a.bg-video-button-muted{
  */
 
 .top-bar.dark{
-    background-color: #333;
+    background-color: #fff;
     border-bottom: none;
 }
-.top-bar.dark .top-links li,
+/* .top-bar.dark .top-links li,
 .top-bar.dark .top-links li:last-child{
     border-color: rgba(255,255,255, .07);
-}
+} */
 .top-bar.dark .top-links li a{
-    color: #aaa;
+    color: #FFC92C;
 }
 .top-bar.dark .top-links li a:hover{
-    color: #ccc;
-    background-color: rgba(255,255,255, .05);
+    color: #FFC92C;
+    /* background-color: rgba(255,255,255, .05); */
 }
 
 
@@ -1565,9 +1565,9 @@ a.logo:hover{
     text-align: left;
     background: rgba(255,255,255, .97);
 
-    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.05);
+    /* -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.05);
     -moz-box-shadow: 0 1px 0 rgba(0,0,0,.05);
-    box-shadow:  0 1px 0 rgba(0,0,0,.05);
+    box-shadow:  0 1px 0 rgba(0,0,0,.05); */
 
     z-index: 1030;
 
@@ -1820,8 +1820,8 @@ a.logo:hover{
 }
 .mobile-on .desktop-nav ul li a:hover,
 .mobile-on .desktop-nav ul li a.active{
-    background: rgba(255,255,255, .03);
-    color: #ddd;
+    /* background: rgba(255,255,255, .03); */
+    color: #FFC92C;
 }
 .mobile-on .desktop-nav ul li a:focus{
     outline-offset: -2px !important;
@@ -1911,9 +1911,9 @@ a.logo:hover{
     color: #777;
 }
 .mobile-nav:active{
-    -webkit-box-shadow: 0 0 35px rgba(0,0,0,.05) inset;
+    /* -webkit-box-shadow: 0 0 35px rgba(0,0,0,.05) inset;
     -moz-box-shadow: 0 0 35px rgba(0,0,0,.05) inset;
-    box-shadow: 0 0 35px rgba(0,0,0,.05) inset;
+    box-shadow: 0 0 35px rgba(0,0,0,.05) inset; */
 }
 .no-js .mobile-nav{
     width: 55px;
@@ -1951,7 +1951,7 @@ a.logo:hover{
  */
 
 .main-nav.dark{
-    background-color: rgba(10,10,10, .95);
+    /* background-color: rgba(10,10,10, .95); */
 
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -1977,7 +1977,7 @@ a.logo:hover{
 }
 
 .main-nav.mobile-on.dark .inner-nav{
-    border-top: 1px solid rgba(100,100,100, .4);
+    /* border-top: 1px solid rgba(100,100,100, .4); */
 }
 
 .main-nav.dark .logo,
