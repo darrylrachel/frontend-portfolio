@@ -1,3 +1,15 @@
+/* Header */
+
+/* Hero */
+
+/* About */
+
+/* Portfolio */
+
+/* Footer */
+
+
+
 body {
 	font-family: 'Roboto', sans-serif;
 }
@@ -221,7 +233,13 @@ h1.display-1 {
 }
 
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 568px) {
+	.about-section .h2 {
+		font-size: 20px;
+	}
+}
+
+@media only screen and (min-width: 768px ) and (max-width: 1198px) {
 	.works-filter a {
 		padding-left: 10px;
 		padding-right: 10px;
@@ -229,9 +247,6 @@ h1.display-1 {
 		width: 30%;
 		font-size: 11px;
 	}
-}
-
-@media only screen and (min-width: 768px ) and (max-width: 1198px) {
 	.portfolio-card {
 		display: flex;
 		flex-direction: column;
@@ -254,5 +269,8 @@ h1.display-1 {
 	}
 	.about-section {
 		margin: 0 auto;
+	}
+	.about-section .h2 {
+		font-size: 20px;
 	}
 }
