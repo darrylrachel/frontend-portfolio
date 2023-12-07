@@ -168,11 +168,11 @@ h1.display-1 {
 	font-size: 21px;
 	color: #FFC92C;
 }
-.portfolio-row {
+/* .portfolio-row {
 	display: flex;
 	flex-direction: row;
 	margin: 20px 0px;
-}
+} */
 .skill-tab {
 	text-align: center;
 }
@@ -183,7 +183,7 @@ h1.display-1 {
 .portfolio-row {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: center;
 	margin: 0 auto;
 }
