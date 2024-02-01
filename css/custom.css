@@ -71,7 +71,7 @@ section.small-section.bg-dark {
   margin-top: 80px;
 }
 .page-section {
-  padding: 70px 0;
+  padding: 0;
 }
 a.btn.btn-mod.btn-w.btn-medium.btn-round.btn-external {
   background-color: rgba(34,34,34, .9);
@@ -80,6 +80,16 @@ a.btn.btn-mod.btn-w.btn-medium.btn-round.btn-external {
 .skills-icon {
   width: 48px;
   height: 48px;
+}
+img.skills-icon.ck {
+  width: 78px;
+}
+p.skill-title.title-ck {
+  margin: -3px;
+}
+.row.skills-row {
+  height: 130px;
+  align-items: baseline;
 }
 .scroll-down-icon {
 	font-size: 45px;
@@ -111,7 +121,7 @@ h1.display-1 {
 	justify-content: space-around;
 	box-shadow: 0px 6px 13px 0px rgba(0, 0, 0, 0.13);
 	-webkit-box-shadow: 0px 6px 13px 0px rgba(0, 0, 0, 0.13);
-	height: 450px;
+	/* height: 450px; */
 	width: 375px;
 	margin: 0;
 	background: #fff;
@@ -121,9 +131,16 @@ h1.display-1 {
 	height: 80%;
 	background: #fff;
 }
-.portfolio-btn-group {
+/* .portfolio-btn-group {
 	margin: 0 auto;
-
+	padding: 13px 0 13px 0;
+} */
+.portfolio-btn-group {
+  margin: 0px auto 20px;
+  padding: 13px 0px 13px;
+}
+.portfolio-btn-group.web {
+  padding: 13px 0 13px 0;
 }
 .home-section {
 	width: 100%;
@@ -206,7 +223,7 @@ h1.display-1 {
 	cursor: default;
 }
 .page-section {
-	padding: 70px 0;
+	padding: 50px;
 	margin-bottom: 60px;
 }
 .portfolio-img {
@@ -220,7 +237,7 @@ h1.display-1 {
 
 .portfolio-btn-group {
 	margin: 0 auto 20px auto;
-	padding: 50px 0 13px 0;
+	padding: 13px 0 13px 0;
 }
 
 .about-section {
