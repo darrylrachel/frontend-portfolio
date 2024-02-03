@@ -223,7 +223,7 @@ h1.display-1 {
 	cursor: default;
 }
 .page-section {
-	padding: 50px;
+	/* padding: 50px; */
 	margin-bottom: 60px;
 }
 .portfolio-img {
@@ -244,6 +244,31 @@ h1.display-1 {
 	margin: 0 auto;
 	text-align: center;
 }
+@media screen and (min-width: 24.375em) {
+  /* Your styles for devices with a minimum width of 390px go here */
+  .about-section .h2 {
+	font-weight: 400;
+	font-size: 16px;
+	padding: 0 16px;
+	}
+	.row.skills-row {
+	height: 850px;
+	align-items: baseline;
+	}
+.custom-social-icons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+	padding-top: 20px;
+	padding-right: 34px;
+	}
+	i.fa.fa-github, i.fa.fa-linkedin {
+  font-size: 30px;
+}
+}
+
+
 .fa:hover {
 	color: #FFC92C;
 	transition: all .3s ease-in-out;
