@@ -1,1 +1,1 @@
-# email-dev
+# Frontend Developer | HTML Email Developer Portfolio

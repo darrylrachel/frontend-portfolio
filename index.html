@@ -14,6 +14,10 @@
     <!-- Favicons -->
     <link rel="shortcut icon" href="images/favicon.png" />
 
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.net.min.js"></script>
+
     <!-- CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -54,11 +58,11 @@
           <!-- Main Menu -->
           <div class="inner-nav desktop-nav">
             <ul class="clearlist scroll-nav local-scroll">
-              <li class="active"><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
+              <li class="active"><a class="nav-link" href="#home">Home</a></li>
+              <li><a class="nav-link" href="#about">About</a></li>
+              <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
               <li>
-                <a href="https://www.linkedin.com/in/darrylrachel/">Contact</a>
+                <a class="nav-link" href="https://www.linkedin.com/in/darrylrachel/">Contact</a>
               </li>
             </ul>
           </div>
@@ -68,41 +72,41 @@
 
       <main id="main">
         <!-- Home Section -->
-        <section
-          class="home-section parallax-2"
-          data-background="/images/email-dev.png"
-          id="home"
-        >
-          <div class="js-height-full container container-fluid">
-            <div class="jumbotron">
-              <h1 class="display-1 greeting">
-                The <span style="color: #ffc92c">passions'</span> in the code.
-              </h1>
-              <p class="lead clearlist scroll-nav local-scroll cta-btn-group">
-                <a
-                  class="btn btn-warning btn-lg"
-                  href="https://www.linkedin.com/in/darrylrachel/"
-                  role="button"
-                  >Hire me</a
-                >
-                <a
-                  class="btn btn-outline-warning btn-lg"
-                  href="#portfolio"
-                  role="button"
-                  >View work</a
-                >
-              </p>
-            </div>
-            <!-- End Hero Content -->
+        <section class="home-section parallax-2">
+          <div id="vanta-background">
+            <div class="js-height-full container container-fluid">
+              <div class="jumbotron">
+                <h1 class="greeting">
+                  Welcome<span style="color: #ffc92c">.</span>
+                </h1>
+                <p class="tagline">I'm Darryl – a Web Developer and I turn Ideas into Interactive Digital Experiences.</p>
+                <p class="lead clearlist scroll-nav local-scroll cta-btn-group">
+                  <a
+                    class="btn btn-warning btn-lg"
+                    href="https://www.linkedin.com/in/darrylrachel/"
+                    role="button"
+                    >Hire me</a
+                  >
+                  <a
+                    class="btn btn-outline-warning btn-lg"
+                    href="#portfolio"
+                    role="button"
+                    >View work</a
+                  >
+                </p>
+              </div>
+          </div>
 
-            <!-- Scroll Down -->
-            <div class="local-scroll">
-              <a href="#about" class="scroll-down"
-                ><i class="fa fa-angle-down scroll-down-icon"></i
-                ><span class="sr-only">Scroll to the next section</span></a
-              >
-            </div>
-            <!-- End Scroll Down -->
+          <!-- End Hero Content -->
+
+          <!-- Scroll Down -->
+          <div class="local-scroll">
+            <a href="#about" class="scroll-down"
+              ><i class="fa fa-angle-down scroll-down-icon"></i
+              ><span class="sr-only">Scroll to the next section</span></a
+            >
+          </div>
+          <!-- End Scroll Down -->
           </div>
         </section>
         <!-- End Home Section -->
@@ -115,20 +119,14 @@
             </h2>
 
             <div class="section-text mb-50 mb-sm-20">
-              <div class="row">
-                <!-- <div class="col-md-4">
-
-                                </div> -->
+              <div class="row about-row">
 
                 <div class="col-md-8 col-sm-12 mb-sm-50 mb-xs-30 about-section">
-                  <p class="h2">
-                    Hey there, I'm Darryl – a passionate
-                    <span style="color: #ffc92c">HTML</span> email developer
-                    hailing from California. Beyond coding emails, you can find
-                    me embracing the challenges of powerlifting, mastering disc
-                    golf throws, and relishing quality time as a devoted family
-                    man. My curiosity drives me to uncover fascinating facts
-                    every day.
+                  <p class="p">
+                    Hi, I'm Darryl – a dedicated Front-End Developer <span style="color: #ffc92c">and</span> HTML Email Developer based in California. My passion for coding is matched by my love for bodybuilding, disc golf, and softball. When I'm not perfecting the art of CSS or crafting responsive emails, you’ll find me pushing my limits in the gym, refining my disc golf technique, or enjoying a good game of softball.
+                    <p class="p">
+                      I’m a lifelong learner, always eager to discover new things, and deeply committed to my family. I believe in the power of curiosity to fuel creativity and innovation in my work.
+                    </p>
                   </p>
                   <ul class="custom-social-icons">
                     <a href="https://github.com/darrylrachel" target="_blank"
@@ -150,37 +148,50 @@
         <!-- Skills Section -->
         <section class="page-section" id="skills">
           <div class="container relative">
-            <h2 class="section-title font-alt mb-70 mb-sm-40">Skills</h2>
+            <h2 class="section-title font-alt">Skills</h2>
             <div class="container">
               <div class="row skills-row">
                 <div class="col-sm-2 skill-tab">
-                  <img src="/images/html.png" alt="" class="skills-icon" />
+                  <img src="/images/icons/html.png" alt="" class="skills-icon" />
                   <p class="skill-title">HTML</p>
                 </div>
                 <div class="col-sm-2 skill-tab">
-                  <img src="/images/css-3.png" alt="" class="skills-icon" />
+                  <img src="/images/icons/css.png" alt="" class="skills-icon" />
                   <p class="skill-title">CSS</p>
                 </div>
                 <div class="col-sm-2 skill-tab">
-                  <img src="/images/bootstrap.png" alt="" class="skills-icon" />
-                  <p class="skill-title">Bootstrap</p>
-                </div>
-                <div class="col-sm-2 skill-tab">
-                  <img src="/images/sketch.svg" alt="" class="skills-icon" />
-                  <p class="skill-title">Sketch</p>
+                  <img
+                    src="/images/icons/javascript.png"
+                    alt=""
+                    class="skills-icon ck"
+                  />
+                  <p class="skill-title title-ck">Javascript</p>
                 </div>
                 <div class="col-sm-2 skill-tab">
                   <img
-                    src="/images/google-analytics.png"
+                    src="/images/icons/git.png"
+                    alt=""
+                    class="skills-icon ck"
+                  />
+                  <p class="skill-title title-ck">Git</p>
+                </div>
+                <div class="col-sm-2 skill-tab">
+                  <img src="/images/icons/mysql.png" alt="" class="skills-icon" />
+                  <p class="skill-title">MySQL</p>
+                </div>
+                <div class="col-sm-2 skill-tab">
+                  <img src="/images/icons/npm.png" alt="" class="skills-icon" />
+                  <p class="skill-title">npm</p>
+                </div>
+                <div class="col-sm-2 skill-tab">
+                  <img
+                    src="/images/icons/sass.png"
                     alt=""
                     class="skills-icon"
                   />
-                  <p class="skill-title">Google Analytics</p>
+                  <p class="skill-title">Sass</p>
                 </div>
-                <div class="col-sm-2 skill-tab">
-                  <img src="/images/convertkit.png" alt="" class="skills-icon ck" />
-                  <p class="skill-title title-ck">ConvertKit</p>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -191,168 +202,73 @@
         <section class="page-section pb-0" id="portfolio">
           <div class="relative">
             <h2 class="section-title font-alt mb-70 mb-sm-40">Portfolio</h2>
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
-                  <div class="section-text align-center mb-70 mb-xs-40">
-                    I specialize in crafting responsive HTML emails. With a
-                    passion for coding I bring creativity and technical
-                    expertise to every project. I have a deep understanding of
-                    HTML and CSS specifically tailored for email development,
-                    ensuring compatibility across various email clients.
-                  </div>
-                </div>
-              </div>
-            </div>
-
             <div class="container portfolio-section">
               <div class="row portfolio-row">
-                <div class="col-sm-12 col-md-4 portfolio-item emails">
-                  <div class="portfolio-card emails" id="emails">
-                    <div class="emails portfolio-card-img">
+                <!-- Individual Item -->
+                <div class="col-sm-12 col-md-6 portfolio-item">
+                  <div class="portfolio-card">
+                    <div class="portfolio-card-img">
                       <img
-                        src="/images/Mcdonalds-Mockup.png"
-                        alt="Mcdonald's Crocs collaboration"
-                        class="portfolio-img"
-                      />
-                      <h3 class="work-title">Mcdonald's Promotional</h3>
-                    </div>
-                    <div class="portfolio-btn-group">
-                      <a
-                        class="btn btn-warning btn-sm"
-                        href="https://github.com/darrylrachel/mcdonalds-crocs"
-                        role="button"
-                        target="_blank"
-                        >View code</a
-                      >
-                      <a
-                        class="btn btn-outline-warning btn-sm"
-                        href="https://mcdonaldscrocs.netlify.app/"
-                        role="button"
-                        target="_blank"
-                        >View project</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-12 col-md-4 portfolio-item">
-                  <div class="portfolio-card" id="emails">
-                    <div class="emails portfolio-card-img">
-                      <img
-                        src="/images/Robinhood-Mockup.png"
-                        alt="Robinhood Newsletter"
-                        class="portfolio-img"
-                      />
-                      <h3 class="work-title">Robinhood Newsletter</h3>
-                    </div>
-                    <div class="portfolio-btn-group">
-                      <a
-                        class="btn btn-warning btn-sm"
-                        href="https://github.com/darrylrachel/robinhood-newsletter"
-                        role="button"
-                        target="_blank"
-                        >View code</a
-                      >
-                      <a
-                        class="btn btn-outline-warning btn-sm"
-                        href="https://robinhood-newsletter.netlify.app"
-                        role="button"
-                        target="_blank"
-                        >View project</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-12 col-md-4 portfolio-item">
-                  <div class="portfolio-card" id="emails">
-                    <div class="emails portfolio-card-img">
-                      <img
-                        src="/images/Honey-Mockup.png"
-                        alt="Honey app receipt"
-                        class="portfolio-img"
-                      />
-                      <h3 class="work-title">Honey Transactional</h3>
-                    </div>
-                    <div class="portfolio-btn-group">
-                      <a
-                        class="btn btn-warning btn-sm"
-                        href="https://github.com/darrylrachel/honey-receipt-recreate"
-                        role="button"
-                        target="_blank"
-                        >View code</a
-                      >
-                      <a
-                        class="btn btn-outline-warning btn-sm"
-                        href="https://honey-transaction-receipt.netlify.app"
-                        role="button"
-                        target="_blank"
-                        >View project</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row portfolio-row">
-                <div class="col-sm-12 col-md-4 portfolio-item">
-                  <div class="portfolio-card" id="landing-pages">
-                    <div class="emails portfolio-card-img">
-                      <img
-                        src="/images/Fylo-Mockup.png"
-                        alt="Fylo Landing Page"
-                        class="portfolio-img"
-                      />
-                      <h3 class="work-title">Landing Page</h3>
-                    </div>
-                    <div class="portfolio-btn-group">
-                      <a
-                        class="btn btn-warning btn-sm"
-                        href="https://github.com/darrylrachel/fem-fylo"
-                        role="button"
-                        target="_blank"
-                        >View code</a
-                      >
-                      <a
-                        class="btn btn-outline-warning btn-sm"
-                        href="https://darryl-fylo.netlify.app/"
-                        role="button"
-                        target="_blank"
-                        >View project</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-12 col-md-4 portfolio-item">
-                  <div class="portfolio-card" id="landing-pages">
-                    <div class="emails portfolio-card-img">
-                      <img
-                        src="/images/Huddle-Mockup.png"
+                        src="./images/portfolio/Huddle.svg"
                         alt="Huddle Landing Page"
-                        class="portfolio-img"
+                        class="card-img-top portfolio-img img-fluid"
                       />
-                      <h3 class="work-title">Landing Page</h3>
-                    </div>
-                    <div class="portfolio-btn-group web">
-                      <a
-                        class="btn btn-warning btn-sm"
-                        href="https://github.com/darrylrachel/huddle"
-                        role="button"
-                        target="_blank"
-                        >View code</a
-                      >
-                      <a
-                        class="btn btn-outline-warning btn-sm"
-                        href="https://darryl-huddle.netlify.app/"
-                        role="button"
-                        target="_blank"
-                        >View project</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
+                      <div class="portfolio-btn-group web">
+                        <a
+                          class="btn code-btn"
+                          href="https://github.com/darrylrachel/huddle"
+                          role="button"
+                          target="_blank"
+                          >View code</a
+                        >
+                        <a
+                          class="btn project-btn"
+                          href="https://darryl-huddle.netlify.app/"
+                          role="button"
+                          target="_blank"
+                          >View project</a
+                        >
+                      </div>
+                    </div>      
+                  </div> 
+                </div> 
+                <!-- End Item -->
+
+                <!-- Individual Item -->
+                <div class="col-sm-12 col-md-6 portfolio-item">
+                  <div class="portfolio-card">
+                    <div class="portfolio-card-img">
+                      <img
+                        src="./images/portfolio/adidas.svg"
+                        alt="Huddle Landing Page"
+                        class="card-img-top portfolio-img img-fluid"
+                      />
+                      <div class="portfolio-btn-group web">
+                        <a
+                          class="btn code-btn"
+                          href="https://github.com/darrylrachel/huddle"
+                          role="button"
+                          target="_blank"
+                          >View code</a
+                        >
+                        <a
+                          class="btn project-btn"
+                          href="https://darryl-huddle.netlify.app/"
+                          role="button"
+                          target="_blank"
+                          >View project</a
+                        >
+                      </div>
+                    </div>      
+                  </div> 
+                </div> 
+                <!-- End Item -->
+
+                
+
+              </div> <!-- End portfolio-row -->
+
             </div>
-            <!-- End div container on portfolion section -->
           </div>
         </section>
         <!-- End Portfolio Section -->
@@ -365,7 +281,7 @@
           <div class="footer-text">
             <!-- Copyright -->
             <div class="footer-copy font-alt">
-              Darryl Rachel <span style="color: #ffc92c"> | </span>HTML Email
+              Darryl Rachel&nbsp;<span class="footer-pipe">|</span>&nbsp;Frontend Web/Email
               Developer 2023.
             </div>
             <!-- End Copyright -->
@@ -399,10 +315,7 @@
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
     <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
-    <script
-      type="text/javascript"
-      src="js/jquery.magnific-popup.min.js"
-    ></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
     <script type="text/javascript" src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
     <script type="text/javascript" src="js/morphext.js"></script>
@@ -410,6 +323,9 @@
     <script type="text/javascript" src="js/all.js"></script>
     <script type="text/javascript" src="js/contact-form.js"></script>
     <script type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script>
+    
+
+    <script type="text/javascript" src="js/scripts.js"></script>
     <!--[if lt IE 10
       ]><script type="text/javascript" src="js/placeholder.js"></script
     ><![endif]-->

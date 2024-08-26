@@ -1,0 +1,14 @@
+{
+  "name": "email-dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typewriter-effect": "^2.21.0"
+  }
+}
