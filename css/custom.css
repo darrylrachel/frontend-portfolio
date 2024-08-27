@@ -24,6 +24,10 @@ body {
     background: #fff;
   }
 
+  section.home-section.parallax-2 {
+    height: 100vh;
+  }
+
   .jumbotron {
     padding-top: 140px;
   }
